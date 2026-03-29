@@ -21,7 +21,7 @@ export function createPassportAsyncOptionsProvider(
 					'[PassportModule] "secretKey" is required and must be a string'
 				)
 
-			return Object.freeze(resoulved)
+			return Object.freeze({ ...resoulved })
 		},
 		inject: options.inject ?? []
 	}
