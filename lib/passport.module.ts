@@ -11,7 +11,7 @@ import { PassportService } from './passport.service'
 @Global()
 @Module({})
 export class PassportModule {
-	static register(options: PassportOptions): DynamicModule {
+	static register(options: PassportOptions) {
 		const optionsProvider = createPassportOptionsProvider(options)
 
 		return {
@@ -21,7 +21,7 @@ export class PassportModule {
 		}
 	}
 
-	static registerAsync(options: PassportAsyncOptions): DynamicModule {
+	static registerAsync(options: PassportAsyncOptions) {
 		const optionsProvider = createPassportAsyncOptionsProvider(options)
 
 		return {
