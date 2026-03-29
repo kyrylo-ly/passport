@@ -1,6 +1,6 @@
 {
 	"name": "@razom-pay/passport",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Lightweight Razom Pay authentication library",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",

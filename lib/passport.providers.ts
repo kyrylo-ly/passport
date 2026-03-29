@@ -3,8 +3,8 @@ import type { PassportAsyncOptions, PassportOptions } from './interfaces'
 
 export function createPassportOptionsProvider(options: PassportOptions) {
 	return {
-		provide: 'PassportOptions',
-		useValue: Object.freeze(options)
+		provide: PASSWORD_OPTIONS,
+		useValue: Object.freeze({ ...options })
 	}
 }
 
